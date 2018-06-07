@@ -1,0 +1,87 @@
+.error404{
+
+    h1{
+        font-family:'main';
+    }
+
+    .site-main{
+        display:flex;
+        flex-wrap:wrap;
+        justify-content:center;
+    }
+
+    section{
+        width:95%;
+        margin-top:5%;
+        margin-bottom:15%;
+    }
+
+    .site-logo{
+        margin-left:3%;
+    }
+
+
+    fieldset{
+        border:none;
+        padding:0px;
+    }
+
+    input[type=search]{
+        background-color: transparent;
+        font-family: 'main-light';
+        width:15rem;
+        border: 1px solid $green;
+    }
+
+    button{
+        background-color:transparent;
+        box-shadow:none;
+        border:none;
+
+        i{
+            color:$green;
+            text-shadow: none;
+            font-size:0.8rem;
+        }
+
+    }
+
+
+    @media (min-width:$breakpoint-tablet){
+        .page-header{
+            height:5rem;
+        }
+        .page-content p{
+            font-size:1rem;
+        }
+        input[type=search]{
+            border:2px solid $green;
+        }
+
+
+    }
+
+    @media (min-width:$breakpoint-desktop){
+        .site-main{
+            display: flex;
+            flex-direction: row;
+            flex-wrap:nowrap;
+            justify-content: center;
+            align-items: center;
+            padding: 5%;
+
+        }
+
+        .error-404 {
+                margin-left:10%;
+                margin-top: 0px;
+            margin-bottom: 0px;
+
+        }
+    
+        input[type=search]{
+            border:2px solid $green;
+        }
+
+    }
+}
