@@ -29,7 +29,6 @@
 				<a href="<?php echo home_url(); ?>"> <img src="<?php bloginfo('stylesheet_directory'); ?>/build/css/images/qod-logo.svg">
 				</a>
 
-					<!-- <a href="/quotesondev"> </a>  -->
 				
 				</div>
 					<!-- <h1 class="site-title screen-reader-text"><a href="<?php //echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php //bloginfo( 'name' ); ?></a></h1> -->

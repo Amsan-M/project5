@@ -3,9 +3,6 @@
 *tag Template
 */
  
-
-
-
 get_header(); ?> 
 
   
@@ -32,22 +29,8 @@ get_header(); ?>
             <?php while ( have_posts() ) : the_post(); ?>
 
 
-
-            
-           
-
-            <!-- <div class="entry"> -->
-
-
             <?php get_template_part( 'template-parts/content', 'single'); ?>
-           
-
-
-    
-
-            <!-- </div>  .entry -->
-
-
+     
 
             <?php endwhile; ?>
 

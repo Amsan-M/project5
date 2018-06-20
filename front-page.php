@@ -15,9 +15,11 @@
 
 	<main id="main" class="site-main" role="main">
 
+    <!-- display 1 first random post before the button is clicked, then the values will change with the ajax request -->
+
 <?php
    $args = array( 'orderby' => 'rand','posts_per_page' => 1 );
-   $quote = new WP_Query( $args ); // instantiate our object
+   $quote = new WP_Query( $args ); 
 ?>
 
 
@@ -27,26 +29,19 @@
 
 	<div class = "random-post" >
 
+    <div class = "random-quote" >
+
+      <?php the_content(); ?>
+
+    </div>
 
 
- 
- <div class = "random-quote" >
+    <div class = "quote-link"> 
+    <?php echo ("-")?>
+    <?php the_title(); ?>
+   </div>  
 
-<?php the_content(); ?>
-
-</div>
-
-
-<div class = "quote-link"> 
-<?php echo ("-")?>
-
-
-<?php the_title(); ?>
-</div>  
-
-      
-           
-            <?php wp_reset_postdata(); ?>
+    <?php wp_reset_postdata(); ?>
 
             	<!-- </main>#main -->
             <?php else : ?>

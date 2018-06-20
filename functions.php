@@ -88,29 +88,6 @@ require get_template_directory() . '/inc/api.php';
 
 
 
-
-// my functions
-
-
-
-
-
-//  function red_scripts() {
-// 	$script_url = get_template_directory_uri() . '/build/js/scripts.min.js';
-// 	wp_enqueue_script( 'jquery' );
-// 	wp_enqueue_script( 'javascript' );
-// 	wp_enqueue_script( 'red_comments', $script_url, array( 'jquery' ), false, true );
-//    wp_localize_script( 'red_comments', 'red_vars', array(
-// 	   'rest_url' => esc_url_raw( rest_url() ),
-// 	   'wpapi_nonce' => wp_create_nonce( 'wp_rest' ),
-// 	   'post_id' => get_the_ID()
-//    ) );
-//  }
-//  add_action( 'wp_enqueue_scripts', 'red_scripts' );
-
-
-
-
 function red_scripts() {
 	wp_enqueue_script( 'jquery' );
 	wp_enqueue_script( 'red_api', get_template_directory_uri() . '/build/js/scripts.min.js', array( 'jquery' ), false, true );
@@ -123,14 +100,3 @@ function red_scripts() {
  }
  add_action( 'wp_enqueue_scripts', 'red_scripts' );
 
-//  function red_scripts() {
-// 	$script_url = get_template_directory_uri() . '/build/js/scripts.min.js';
-// 	wp_enqueue_script( 'jquery' );
-// 	wp_enqueue_script( 'red_comments', $script_url, array( 'jquery' ), false, true );
-//    wp_localize_script( 'red_comments', 'red_vars', array(
-// 	   'ajax_url' => admin_url( 'admin-ajax.php' ),
-// 	   'comment_nonce' => wp_create_nonce( 'red_comment_status' ),
-// 	   'post_id' => get_the_ID()
-//    ) );
-//  }
-//  add_action( 'wp_enqueue_scripts', 'red_scripts' );

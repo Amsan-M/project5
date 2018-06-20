@@ -6,7 +6,6 @@
 get_header(); ?> 
 
   
- 
     <section id="primary" class="category-tag-content">
 
         <div class ="cat-tag-content" role="main">
@@ -23,31 +22,10 @@ get_header(); ?>
                 </header>
 
 
-
                 <?php if ( have_posts() ) : ?>
-
                 <?php while ( have_posts() ) : the_post(); ?>
-
-
-
-                
-               
-
-                <!-- <div class="entry"> -->
-
-
                 <?php get_template_part( 'template-parts/content', 'single'); ?>
-               
-
-
-        
-
-                <!-- </div>  .entry -->
-
-
- 
                 <?php endwhile; ?>
-
                 <?php qod_numbered_pagination(); ?>
 
                 <?php else: ?>

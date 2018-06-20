@@ -41,12 +41,4 @@ get_header(); ?>
 	</div><!-- #primary -->
 
 
-	<!-- <div class = "random-test" >
-
-	<button id="get-quote-btn"> get another quote </button> 
-
-	<div class = "random-quote"></div>
-	
-	</div> -->
-
 <?php get_footer(); ?>
