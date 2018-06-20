@@ -1,204 +1,220 @@
 .archive.paged,
 .archive.category,
-.archive.tag{
+.archive.tag {
 
-  .site-content{
-      margin-top: 10%;
-}
-    .category-tag-content{
-        padding:2%;
-    }
-   
 
-    .archive-header{
-        margin:2%;
+    .category-tag-content {
+        padding: 2%;
     }
 
-    .random-quote p{
-        font-size:1.25rem;
+    .hentry {
+        margin: 0px;
     }
 
-    .quote-source {
-        display:flex;
-        font-family:"main-light-i";
-        color:white;
-        font-size:1.2rem;
-        margin-left:5px;
-
-        a{
-            color:$green;
-            font-size:1.2rem;
-        }
-    }
-
-    .dev-author{
-        font-size:1rem;
-        color:white;
-
-    }
-
-    .single-quote{
+    .archive-header {
         border-bottom: 1px dotted white;
     }
 
-    .quote-info{
-        display:inline-flex;
-        flex-wrap:wrap;
+    article {
+        border-bottom: 1px dotted white;
+    }
 
-        p{
-            margin:0px;
+    .entry-header {
+        height: auto;
+        margin-top: 0px;
+    }
+
+    .archive-header {
+        margin: 2%;
+        text-transform: uppercase;
+    
+    }
+
+    .archive-title {
+        text-transform: none;
+    }
+
+    .random-quote p {
+        font-size: 1.25rem;
+    }
+
+    .quote-link {
+        display: inline;
+    
+        font-weight: 300;
+        flex-wrap: wrap;
+        word-break: break;
+        color: white;
+        font-size: 1.25rem;
+        margin-left: 5px;
+        a {
+            color: $green;
         }
-
+        h6 {
         
-    }
-
-    @media (min-width:$breakpoint-tablet){
-
-        .single-quote{
-            padding-bottom:5%;
-        }
-        .archive-header{
-            margin:0%;
-            height:6rem;
-        }
-
-        .random-quote p{
-            font-size:1.7rem;
-        }
-
-        .author-quote p{
-            font-size:1.2rem;
-            color:white;
-
-        }
-
-        a{
-            color:$green;
-            font-size:1.2rem;
+            font-style: italic;
+            margin: 0px;
+            font-size: 1.25rem;
+            font-weight: 300;
         }
     }
 
+    .author-quote {
+        margin: 0px;
+    }
 
-    @media (min-width:$breakpoint-desktop){
+    .dev-author {
+        font-size: 1rem;
+        color: white;
+    }
 
-        .site-content{
+    .single-quote {
+        padding-bottom: 2%;
+    }
+    .quote-info {
+        display: inline-flex;
+        flex-wrap: wrap;
+        p {
+            margin: 0px;
+        }
+    }
+    
+
+    @media (min-width:$breakpoint-tablet) {
+
+        .archive-header {
+            margin: 0%;
+            height: 6rem;
+        }
+
+        .random-quote p {
+            font-size: 1.7rem;
+        }
+
+        .author-quote p {
+            font-size: 1.2rem;
+            color: white;
+        }
+
+        a {
+            color: $green;
+            font-size: 1.2rem;
+        }
+    } //breakpoint tablet
+
+
+    @media (min-width:$breakpoint-desktop) {
+
+        .site-content {
             display: flex;
             justify-content: center;
             flex-wrap: wrap;
         }
-        .category-tag-content{
-            padding:10%;
+
+        .category-tag-content {
+            padding: 15%;
+            padding-top: 5%;
+            padding-bottom: 0px;
         }
 
-        .tag-content{
-            width:80%;
-            display:flex;
-            justify-content:center;
-            flex-direction:column;
-
-            .number-pagination{
+        .tag-content {
+            width: 80%;
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            .number-pagination {
                 width: 100%;
                 margin-left: 15%;
             }
         }
 
-        
-        .tag-archive-wrapper{
+        .tag-archive-wrapper {
             display: flex;
-            width:100%;
+            width: 100%;
             justify-content: space-between;
-            margin-top:5%;
-        }
-        .cat-tag-content{
-            display:flex;
-            justify-content:center;
-            //margin-top:5%;
+            margin-top: 5%;
         }
 
-        .entries-wrapper{
-            width:100%;
-          
+        .cat-tag-content {
+            display: flex;
+            justify-content: center;
+            margin-top: 5%;
         }
 
-        .single-quote{
-            padding-bottom:5%;
-
-        p{
-            font-size:2rem;
-            font-family:'main-light';
-           
-        }
+        .entries-wrapper {
+            width: 100%;
+            padding: 5%;
+            padding-top: 0px;
         }
 
-
-
-    
-        .quote-source p{
-            font-family:"main-light-i";
-            color:white;
-            font-size:1.2rem;
-            margin-left:5px;
-
-           
-           
-    
-           
-        a{
-            color:$green;
-            font-size:1.2rem;
-        }
+        .single-quote {
+            p {
+                font-weight: 300;
+                font-size: 2.5rem;
+            }
         }
 
-        .author-quote p {
-            font-family:"main-light";
-            font-size:1.2rem;
-        } 
-
-        .number-pagination{
-            margin-top:5%;
-            margin-bottom:5%;
-        }
-    }
-
-    
-}
-
-
-
-.archive.category{
-
-    @media (min-width:$breakpoint-desktop){
-        .category-tag-content{
-            width:90%;
-            padding-top:0px;
-        }
-
-        .entries-wrapper{
-            padding:5%; 
-        }
-
-        .single-quote p{
-            font-size:2rem;
-            font-family:'main-light';
-           
-        }
-    
-        .quote-info p{
-            font-family:"main-light-i";
-            color:white;
-            font-size:1.2rem;
-            margin-left:5px;
-    
-            a{
-                color:$green;
+        .quote-source p {
+            font-weight: 300;
+            font-style: italic;
+            font-size: 1.2rem;
+            margin-left: 5px;
+            a {
+                color: $green;
+                font-size: 1.2rem;
             }
         }
 
         .author-quote p {
-            font-family:"main-light";
-            font-size:1.2rem;
-        } 
-    
-    }
+        
+            font-weight: 300;
+            font-style: italic;
+            font-size: 1.2rem;
+        }
+        .number-pagination {
+            margin-top: 5%;
+            margin-bottom: 5%;
+        }
+    }//breakpoint desktop
 
+
+}// .archive.paged/ .archive.category/ .archive.tag
+
+
+// specificities for archive category on desktop
+
+.archive.category {
+    @media (min-width: $breakpoint-desktop) {
+        .category-tag-content {
+            width:100%;
+            padding-top: 0px;
+            padding-bottom: 0px;
+        }
+        .entries-wrapper {
+            padding: 5%;
+            padding-top: 0px;
+        }
+        .single-quote p {
+            font-size: 2rem;
+            font-weight: 300;
+        
+        }
+        .quote-info p {
+        
+            font-weight: 300;
+            font-style: italic;
+            color: white;
+            font-size: 1.2rem;
+            margin-left: 5px;
+            a {
+                color: $green;
+            }
+        }
+        .author-quote p {
+        
+            font-weight: 300;
+            font-style: italic;
+            font-size: 1.2rem;
+        }
+    }
 }

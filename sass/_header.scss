@@ -1,79 +1,57 @@
-header{
-
-    .site-branding{
-        display:flex;
-        flex-wrap:wrap;
-        justify-content:center;
-        margin-top: 10%;
+header {
+    .site-branding {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
         justify-content: left;
     }
- 
-
-    .site-logo{
-       // background: url('../css/qod-logo.svg');
+    .site-logo {
+        // background: url('../css/qod-logo.svg');
         background-size: contain;
-        background-repeat:no-repeat;
-        width: 80%;
+        background-repeat: no-repeat;
+        width: 75%;
         height: 3rem;
-        margin-top: 5%; 
-        margin-left:5%;
+        margin-top: 5%;
+        margin-left: 2%;
     }
+}
 
-    
-
-      
-          
-}  
-@media (min-width:$breakpoint-tablet){
-     
-    header{
-        height:10rem;
-         
-        .site-branding{
-            margin-top:0px;
-        }
-
-        .site-logo{
-          
-            height:7rem;
-            margin-top:10%;
-            margin-left:5%;
+@media (min-width:$breakpoint-tablet) {
+    header {
+        // height:10rem;
+        margin-top: 5%;
+        .site-logo {
+            height: auto;
+            margin-top: 0%;
+            margin-left: 3%;
             width: 60%;
-
-        }
-    }
-
-
-    @media (min-width:$breakpoint-desktop){
-        header{
-            height:10rem;
-            
-            
-    
-             
-            .site-branding{
-                margin-top:0px;
-                justify-content:center;
-            }
-    
-            .site-logo{
-                
-                height:10rem;
-                margin-top:3%;
-                margin-left:0px;
-                width: 80%;
-                display: flex;
-                justify-content: center;
-                
-                img{
-                    width:700px;
-                }
-    
+            img {
+                width: 100%
             }
         }
-
     }
+    .content-area {
+        margin-top: 0px;
+    }
+  
+}
 
-    
-
+@media (min-width:$breakpoint-desktop) {
+    header {
+        height: 10rem;
+        .site-branding {
+            justify-content: center;
+        }
+        .site-logo {
+            height: 10rem;
+            margin-top: 3%;
+            margin-left: 0px;
+            width: 80%;
+            display: flex;
+            justify-content: center;
+            img {
+                width: 700px;
+            }
+        }
+    }
 }

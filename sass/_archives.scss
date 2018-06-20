@@ -1,10 +1,44 @@
 .page-template-archive{
 
+    h1{
+        width:100%;
+        text-transform: capitalize;
+        font-size:2em;
+        margin-bottom:2%;
+        
+    }
+
+    .author-list, 
+    .categories-list, 
+    .tags-list {
+        
+        display: inline-flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        list-style: none;
+        margin: 0px;
+        padding: 0px;
+        justify-content: flex-start;
+
+        li{
+            margin-right:3%;
+           
+        }
+        a{
+            font-size:1.1rem;
+            font-weight:300;
+        }
+
+        a:hover{
+            color:#277700;
+        }
+
+    }
+
    
     span.author-wrapper{
         width:100%;
        
-
     }
 
     .archives-container{
@@ -19,24 +53,7 @@
         flex-wrap: wrap;
         flex-direction: row;
         margin:5%;
-
-        h1{
-            width:100%;
-            text-transform: capitalize;
-        }
-
-        h2{
-            margin-right:4%;
-            font-size:1rem;
-        }
-
-        a{
-            font-family:'main-light';
-        }
-
-        a:hover{
-            color:#277700;
-        }
+      
     } 
 
     .categories,
@@ -52,14 +69,32 @@
 
 
     @media (min-width:$breakpoint-tablet){
-        .Authors h2,
-        .categories h2,
-        .Tags-archives h2{
+        
+
+        .author-list, 
+        .categories-list, 
+        .tags-list {
             margin-right:2%;
-            font-size:1.2rem;
-            font-family:'main-light';
+            a{
+               
+                font-size:1.4rem;
+                font-weight: 300;
+                // font-family: 'Exo';
+
+            }
         }
 
+        .page-title{
+            margin-top:0px;
+            font-size:1.7rem;
+            font-weight:bold;
+            
+        }
+
+        .site-content h1{
+            font-weight:400;
+            font-size:1.5em;
+        }
     }
 
 
@@ -68,24 +103,35 @@
         span.author-wrapper{
         display:inline-flex;
         flex-wrap:wrap;
-        //flex-direction:row;
-        //padding:10%;
         padding-top:0px;
+        margin-left:3%;
+
+            .Authors{
+                margin-top:0px;
+            }
 
         }
 
-        .Authors h2,
-        .categories h2,
-        .Tags-archives h2{
-            margin-right:2%;
-            font-size:1.3rem;
+        ul a{
+            font-size:3rem;
         }
 
         .archives-container{
             margin:10%;
+            margin-top:2%;
+         
+                width: 80%;
+            }
+
+        .site-content{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
         }
 
         
 
     }
+
 }

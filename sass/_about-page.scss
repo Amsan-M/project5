@@ -1,110 +1,122 @@
-.page-template-page-about{
-
-    body{
-    background-color:$black;
-    max-width:640px;
-    width:100%;
-    height:100%;
-
+.page-template-about {
+    
+    body {
+        background-color: $black;
+        max-width: 640px;
+        width: 100%;
+        height: 100%;
+        p {
+            font-size: 1rem;
+        }
     }
 
-
-    .hfeed.site{
+    .hfeed.site {
         display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
+        flex-direction: row;
+        flex-wrap: wrap;
     }
 
-    header{
-        
-        height: 6rem;
+    header {
+        height: auto;
         width: 100%;
         margin-top: 5%;
     }
 
-    
-    .site-content{
-        margin-top:5%;
+    .site-content {
+        margin-top: 5%;
+        h1 {
+            margin: 0px;
+            font-weight: 400;
+        }
     }
-    
 
-    .content-area{
-        margin-top:10%;
-        display:flex;
-        flex-direction:row;
-        flex-wrap:wrap;
-        width:100%;
-        height:auto;
-        justify-content:center;
+    .content-area {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 100%;
+        height: auto;
+        justify-content: center;
 
-        .site-main{
+        .site-main {
             width: 100%;
             justify-content: center;
             display: flex;
-            margin-bottom:15%;
+            margin-bottom: 15%;
         }
 
-        article{
-            width:90%;
-
+        article {
+            width: 90%;
             .entry-header,
-            .entry-title{
-                margin:0px;
+            .entry-title {
+                margin: 0px;
             }
-
-            
         }
     }
 
 
-      
-        
+    @media (min-width:$breakpoint-tablet) {
 
-     
-
-        @media (min-width:$breakpoint-tablet){
-            
-            .site-logo{
-                
-                margin-left: 5%;
-            }
-            .entry-content, p{
-                margin:0px;
+        .site-logo {
+            margin-left: 5%;
+            width: 90%;
+            margin-top: 0;
+            img {
+                width: 90%;
             }
         }
 
+        .entry-content,
+        p {
+            margin: 0px;
+            font-size: 1rem;
+            line-height: 1.5;
+        }
+        .entry-title h1 {
+            font-weight: 300;
+        }
 
-    @media (min-width:$breakpoint-desktop){
 
-        
-        
+    } //media tablet
 
-        .content-area{
-            display:flex;
-            flex-wrap:wrap;
-            justify-content: center;
-            padding: 10%;
-            padding-top:0px;
-            padding-bottom:0px;
-        
 
-            .site-main{
+    @media (min-width:$breakpoint-desktop) {
+
+        .site-logo {
+            a {
                 width: 60%;
             }
-
-            p{
-                font-size:1rem;
-            }
-
-            .entry-header{
-                height:4rem;
-            }
         }
 
+        .site-content {
+            margin-top: 0%;
+        }
+
+        .content-area {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            padding: 10%;
+            padding-top: 0px;
+            padding-bottom: 0px;
+
+            .site-main {
+                width: 60%;
+                margin-bottom: 0px;
+            }
+
+            p {
+                font-size: 1rem;
+            }
+
+            .entry-header {
+                height: 4rem;
+            }
+        }
     }
 
+    .entry-content p {
+        margin-top: 2%;
+    }
 
-}
-
-
-
+}//media desktop

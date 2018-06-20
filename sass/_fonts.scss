@@ -2,43 +2,99 @@
 # Embedded Fonts
 --------------------------------------------------------------*/
 @font-face {
-    font-family: 'main-light-i';
-    src: url('Exo-LightItalic.woff2') format('woff2'),
-        url('Exo-LightItalic.woff') format('woff');
-    font-weight: 300;
-    font-style: italic;
-}
-
-@font-face {
-    font-family: 'main';
-    src: url('Exo-Medium.woff2') format('woff2'),
-        url('Exo-Medium.woff') format('woff');
+    font-family: 'Exo';
+    src: url('./fonts/Exo-Medium.eot');
+    src: url('./fonts/Exo-Medium.eot?#iefix') format('embedded-opentype'),
+        url('./fonts/Exo-Medium.woff2') format('woff2'),
+        url('./fonts/Exo-Medium.woff') format('woff'),
+        url('./fonts/Exo-Medium.ttf') format('truetype'),
+        url('./fonts/Exo-Medium.svg#Exo-Medium') format('svg');
     font-weight: 500;
     font-style: normal;
 }
 
 @font-face {
-    font-family: 'main-light';
-    src: url('Exo-Light.woff2') format('woff2'),
-        url('Exo-Light.woff') format('woff');
+   
+    font-family: 'Exo';
+    src: url('./fonts/Exo-Light.eot');
+    src: url('./fonts/Exo-Light.eot?#iefix') format('embedded-opentype'),
+        url('./fonts/Exo-Light.woff2') format('woff2'),
+        url('./fonts/Exo-Light.woff') format('woff'),
+        url('./fonts/Exo-Light.ttf') format('truetype'),
+        url('./fonts/Exo-Light.svg#Exo-Light') format('svg');
     font-weight: 300;
     font-style: normal;
 }
 
 @font-face {
-    font-family: 'main-italic';
-    src: url('Exo-MediumItalic.woff2') format('woff2'),
-        url('Exo-MediumItalic.woff') format('woff');
+    font-family: 'Exo';
+    src: url('./fonts/Exo-LightItalic.eot');
+    src: url('./fonts/Exo-LightItalic.eot?#iefix') format('embedded-opentype'),
+        url('./fonts/Exo-LightItalic.woff2') format('woff2'),
+        url('./fonts/Exo-LightItalic.woff') format('woff'),
+        url('./fonts/Exo-LightItalic.ttf') format('truetype'),
+        url('./fonts/Exo-LightItalic.svg#Exo-LightItalic') format('svg');
+    font-weight: 300;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Exo';
+    src: url('./fonts/Exo-MediumItalic.eot');
+    src: url('./fonts/Exo-MediumItalic.eot?#iefix') format('embedded-opentype'),
+        url('./fonts/Exo-MediumItalic.woff2') format('woff2'),
+        url('./fonts/Exo-MediumItalic.woff') format('woff'),
+        url('./fonts/Exo-MediumItalic.ttf') format('truetype'),
+        url('./fonts/Exo-MediumItalic.svg#Exo-MediumItalic') format('svg');
     font-weight: 500;
     font-style: italic;
 }
 
-
+@font-face {
+    font-family: 'Exo';
+    src: url('./fonts/Exo-Medium_1.eot');
+    src: url('./fonts/Exo-Medium_1.eot?#iefix') format('embedded-opentype'),
+        url('./fonts/Exo-Medium_1.woff2') format('woff2'),
+        url('./fonts/Exo-Medium_1.woff') format('woff'),
+        url('./fonts/Exo-Medium_1.ttf') format('truetype'),
+        url('./fonts/Exo-Medium_1.svg#Exo-Medium') format('svg');
+    font-weight: 500;
+    font-style: normal;
+}
 
 @font-face {
-  font-family: 'FontAwesome';
-  src: url('../fonts/fontawesome-webfont.eot?v=4.0.3');
-  src: url('../fonts/fontawesome-webfont.eot?#iefix&v=4.0.3') format('embedded-opentype'), url('../fonts/fontawesome-webfont.woff?v=4.0.3') format('woff'), url('../fonts/fontawesome-webfont.ttf?v=4.0.3') format('truetype'), url('../fonts/fontawesome-webfont.svg?v=4.0.3#fontawesomeregular') format('svg');
-  font-weight: normal;
-  font-style: normal;
+    font-family: 'Exo';
+    src: url('./fonts/Exo-Light_1.eot');
+    src: url('./fonts/Exo-Light_1.eot?#iefix') format('embedded-opentype'),
+        url('./fonts/Exo-Light_1.woff2') format('woff2'),
+        url('./fonts/Exo-Light_1.woff') format('woff'),
+        url('./fonts/Exo-Light_1.ttf') format('truetype'),
+        url('./fonts/Exo-Light_1.svg#Exo-Light') format('svg');
+    font-weight: 300;
+    font-style: normal;
 }
+
+@font-face {
+    font-family: 'Exo';
+    src: url('./fonts/Exo-MediumItalic_1.eot');
+    src: url('./fonts/Exo-MediumItalic_1.eot?#iefix') format('embedded-opentype'),
+        url('./fonts/Exo-MediumItalic_1.woff2') format('woff2'),
+        url('./fonts/Exo-MediumItalic_1.woff') format('woff'),
+        url('./fonts/Exo-MediumItalic_1.ttf') format('truetype'),
+        url('./fonts/Exo-MediumItalic_1.svg#Exo-MediumItalic') format('svg');
+    font-weight: 500;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Exo';
+    src: url('./fonts/Exo-LightItalic_1.eot');
+    src: url('./fonts/Exo-LightItalic_1.eot?#iefix') format('embedded-opentype'),
+        url('./fonts/Exo-LightItalic_1.woff2') format('woff2'),
+        url('./fonts/Exo-LightItalic_1.woff') format('woff'),
+        url('./fonts/Exo-LightItalic_1.ttf') format('truetype'),
+        url('./fonts/Exo-LightItalic_1.svg#Exo-LightItalic') format('svg');
+    font-weight: 300;
+    font-style: italic;
+}
+

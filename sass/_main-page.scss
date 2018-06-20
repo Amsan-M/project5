@@ -1,119 +1,138 @@
-.page-template-page-main{
+.page-template-front-page {
 
-    
-    
-    .site-content{
+    .site-content {
         margin-top: 15%;
     }
-    .random-post{
-        margin-top: 10%;
-        margin-bottom: 10%; 
-        margin-left: 5%;
-        margin-right: 5%;
+
+    .site-main {
+        margin: 2%;
     }
 
-    .random-quote{
-        font-size:1.3rem;
+    .random-post {
+        margin-top: 5%;
+        margin-bottom: 10%;
+        article {
+            margin-top: 0px;
+        }
     }
-    .author-quote{
-        color:$white ;
-        font-family: 'main-light';
-        font-size:1.2rem;
+
+    .random-quote {
+        font-size: 1.3rem;
     }
-    .quote-source{
-        color:white;
-        font-family:"main-light";
-        font-size:1.2rem;
 
-}
+    .author-quote {
+        color: $white;
+        font-weight: 300; 
+        font-size: 1.2rem;
+        margin-right: 0px;
+    }
 
-    #get-quote-btn{
+    .quote-link {
+        color: white;
+        font-weight: 300; 
+        font-size: 1.2rem;
+    }
+
+    #get-quote-btn {
         background-color: transparent;
-        box-shadow:none;
+        box-shadow: none;
         border: 2px solid $green;
-        text-shadow:none;
-        color:$green;
-        font-family:'main';
-        font-size:1.2rem;
+        text-shadow: none;
+        color: $green;
+        font-size: 1.2rem;
         text-transform: capitalize;
-        margin-top:10%;
-        background:none;
+        margin-top: 10%;
+        background: none;
     }
-    #get-quote-btn:hover{
-        color:#277700;
-      border: 2px solid #277700;
+    #get-quote-btn:hover {
+        color: #277700;
+        border: 2px solid #277700;
     }
-
-    button:focus { 
-        outline: none; }
-       
-
-
-    @media (min-width:$breakpoint-tablet){
-
-        .site-content{
-            margin-top:10%;
-        }
-
-        #get-quote-btn{
-            margin-top:5%;
-        }
-
-        .random-quote{
-            font-size:1.9rem
-        }
-
-        button{
-            width:15rem;
-            height:3rem;
-        }
+    button:focus {
+        outline: none;
     }
 
-    
-    @media (min-width:$breakpoint-desktop){
 
+    @media (min-width:$breakpoint-tablet) {
 
-        .site-content{
-            margin-top:5%;
-
+        .site-content {
+            margin-top: 10%;
         }
-        .single-quote-content{
+
+        #get-quote-btn {
+            margin-top: 5%;
+        }
+
+        .random-quote {
+            font-size: 1.9rem
+        }
+
+        button {
+            width: 15rem;
+            height: 3rem;
+        }
+    }
+
+
+    @media (min-width:$breakpoint-desktop) {
+
+        .site-content {
+            margin-top: 5%;
+        }
+
+        .single-quote-content {
             display: flex;
             justify-content: center;
-        
         }
 
-        .random-post{
-            margin-top:0px;
-            padding:2%;
+        .site-main {
+            margin-top: 0;
+        }
+
+        .content-area {
+            display: flex;
+            width: 100%;
+            justify-content: center;
+        }
+
+        .content-wrapper {
+            display: flex;
+            width: 70%;
+            justify-content: space-between;
+        }
+
+        .random-post {
+            margin-top: 0px;
+            padding: 2%;
             display: flex;
             flex-direction: column;
-
-            p{
-                font-size:2.5rem;
-
+            p {
+                font-size: 2.5rem;
             }
         }
 
-        .random-quote-wrapper{
+        .random-quote-wrapper {
             width: 80%;
             display: flex;
             justify-content: center;
         }
 
-        .button-container{
-            display:flex;
-            justify-content:center;
-           
-            button{
-                width:20rem;
-                height:4rem;
-            
-            }
+        .random-quote p {
+            margin-top: 0px;
         }
 
-
+        .button-container {
+            display: flex;
+            justify-content: center;
+            padding-top: 5%;
+            button {
+                width: 20rem;
+                height: 4rem;
+            }
+        }
+        
+        #get-quote-btn {
+            margin-top: 0%;
+        }
     }
-
-
 }

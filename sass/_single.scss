@@ -1,32 +1,22 @@
+
 .post-template-default.single{
 
+    .content-wrapper{
+        display:flex;
+        flex-direction:row;
+        flex-wrap:wrap;
+        margin-left:3%;
 
-    article{
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        width: 100%;
-        justify-content: space-between;
-        margin-top:10%;
-       
-    
     }
-    
 
-    .site-main{
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: left;
-        margin-bottom:10%;
-        margin-left:5%;
-        margin-right:5%;
+    .content-area{
+        margin-top:5%;
+        margin-bottom:5%;
 
-
-    .button-container{
-        display: flex;
-        width: 100%;
-        justify-content: center;
+        .site-main{
+            padding-bottom: 10%;
+            
+        }
     }
 
     #get-quote-btn{
@@ -35,159 +25,93 @@
         border: 2px solid $green;
         text-shadow:none;
         color:$green;
-        font-family:'main';
+        font-family:"Exo";
         font-size:1.2rem;
         text-transform: capitalize;
-        margin-top:10%;
+        margin-top:0%;
         width:15rem;
         background:none;
         
     }
+  
     #get-quote-btn:hover{
         color:#277700;
-      border: 2px solid #277700;
+        border: 2px solid #277700;
     }
 
     button:focus { 
-        outline: none; }
-        
-        }
+        outline: none;      
+    }   
+
+    .quote-link, .random-quote{
+        font-weight: 300;
+        font-size:1.25rem;
+    }    
+
     
-    }
 
-    .single-quote{
-        width: 100%;
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        //justify-content: center;
-
-
-        .random-quote{
-       
-            width:100%;
-            font-size:1.5rem;
-            
-        }
-
-        .author-quote{
-            font-family:'main-italic';
-            font-size:1rem;
-            display: inline-flex;
-            flex-wrap:wrap;
-            margin-right:0.7rem;
-            color:$white;
-
-            p{
-                margin:0px;
-                margin-right:0.2rem;
-            }
-        }
-
-
-        .quote-source{
-            color:white;
-            font-family: "main-light-i";
-        }
-        .quote-info{
-            display:inline-flex;
-            width:100%;
-            flex-wrap:wrap;
-        }
-
-       
-    }
 
     @media (min-width:$breakpoint-tablet){
 
+        .content-area{
+            margin-top:0%;
+        }
 
-       .single-quote .random-quote{
-       
-          
-            font-size:2rem;
+        .random-quote{
+            font-size: 1.75rem;
             
         }
+        .quote-link{
+            font-size: 1.25rem;
+        }
     }
+
 
 
     @media (min-width:$breakpoint-desktop){
 
         .content-area{
-            display: flex;
-            justify-content: center;
-          
-           justify-content: center;
-           padding: 10%;
-           padding-bottom:2%;
+            display:flex;
+            width:100%;
+            justify-content:center;
+            margin-top: 5%;
         }
 
-        
-
-        .post-template-default.single article{
-            display: flex;
+        .content-wrapper{
             flex-direction: row;
-            flex-wrap: wrap;
-            width: 100%;
-            justify-content: space-between;
-            margin-top:0%;
-            padding-left: 10%;
-            padding-right: 10%;
-            margin-top:0%;
-        
+            display: flex;
+            width: 80%;
         }
-
 
         .site-main{
+            width: 70%;
+            padding-left: 3%;
+            padding-right: 3%;
+        }
+
+        .entry-header{
+            margin-top:0%;
+            height:auto;
+        }
+
+
+        .random-quote p{
+            font-size:2rem;
+            margin:0px;
+            margin-bottom: 4%;
+        }
+
+        .quote-link{
+            font-size: 1.25rem;
+        }
+
+        .button-container{
             display: flex;
-            flex-direction: row;
-            flex-wrap: wrap;
-            justify-content: center;
-
-           
-
-
-        .single-quote{
             width: 100%;
-            
-            display: flex;
-            flex-direction: row;
-            flex-wrap: wrap;
             justify-content: center;
-
-
-            .random-quote{
-           
-                width:100%;
-                font-size:2.5rem;
-                
-            }
-
-            .author-quote{
-                font-family:'main-italic';
-                font-size:1rem;
-                display: inline-flex;
-                color:$white;
-
-                p{
-                    margin:0px;
-                    
-                }
-            }
+            margin-top:5%; 
         }
 
     }
-
-    @media (min-width:$breakpoint-desktop){
-        .single-quote-content{
-            display: flex;
-            justify-content: space-around;
-        
-        }
-
-       
-    }
-
-
-   
 
 }

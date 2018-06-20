@@ -1,23 +1,21 @@
-# Quotes on Dev Starter
+# Quotes on Dev 
 
-A WordPress starter theme for the Quotes on Dev project, forked from Underscores.
+A WordPress quote machine, inspired by Chris Coyier's Quotes on Design, and created by RED Academy for their students.
 
-## Installation
+## Tools
 
-### 1. Download me (don't clone me!)
+Wordpress
+Javascript
+Css
+Api
 
-Then add me to your `wp-content/themes` directory.
 
-### 2. Rename the `quotesondev-starter-master` directory
+Sass
+Gulp
 
-Make sure that the theme directory name is project appropriate! Do you need `starter` or `master` in the directory name?
 
-### 3. Install the dev dependencies
 
-Next you'll need to run `npm install` **inside your theme directory** to install the npm packages you'll need for Gulp, etc.
+### learning objectives
 
-### 4. Update the proxy in `gulpfile.js`
+With Wordpress as a plateform,we learned use and Ajax to fetch informations from an XMl file to populate the webstite 
 
-Lastly, be sure to update your `gulpfile.js` with the appropriate URL for the Browsersync proxy (so change `localhost[:port-here]/[your-dir-name-here]` to the appropriate localhost URL).
-
-And now would be a good time to `git init` :)

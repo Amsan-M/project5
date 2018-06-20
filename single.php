@@ -1,36 +1,51 @@
-<?php
+<?php 
 /**
  * The template for displaying all single posts.
  *
  * @package QOD_Starter_Theme
  */
 
-get_header(); ?>
+get_header(); ?> 
 
 <div id="primary" class="content-area">
 
+
+   <div class = "content-wrapper"> 
+
 	<span class = "quote-wrapper-left"><i class="fas fa-quote-left"></i></span>
 
-		<main id="main" class="site-main" role="main">
+		<main id="main" class="site-main" role="main"> 
 
 			<?php while ( have_posts() ) : the_post(); ?>
 
-			<?php get_template_part( 'template-parts/content', 'single' ); ?>
+ 			<?php endwhile; ?> 
+			
 
-			<?php //the_post_navigation(); ?>
+			<!-- <div class = "random-post" > -->
 
-			<?php endwhile; // End of the loop. ?>
+				<?php get_template_part( 'template-parts/content', 'single' ); ?> 
+			
+				<span class = "button-container"> 
+					
+          <button id="get-quote-btn"> show me another ! </button> 
+                  
+      </span>
+	
+			<!-- </div> -->
+
+				<?php wp_reset_postdata(); ?>
+
+
+
+		 </main>
 
 		
-<div class ="button-container">
-			 <button id="get-quote-btn"> show me another ! </button> 
-			 </div>
 
-		</main><!-- #main -->
+	<span class = "quote-wrapper-right"><i class="fas fa-quote-right"></i></span>
 
-		<span class = "quote-wrapper-right"><i class="fas fa-quote-right"></i></span>
-
-	</div><!-- #primary -->
+		
+</div>		
+</div><!-- #primary -->
 
 	
 
