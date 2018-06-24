@@ -49,22 +49,6 @@ get_header(); ?>
 </div>
 
 
-<div class = "success-message" id="success-message"> 
-
-	<div class = "success-message-container">
-
-		<span class = "message-wrapper">
-
-			<span class = "quote-wrapper-left"><i class="fas fa-quote-left"></i></span>
-			<p> Your quote has been submitted <p>
-			<span class = "quote-wrapper-right"><i class="fas fa-quote-right"></i></span>
-
-		</span>
-
-	</div>
-
-</div>
-
 <?php else : ?>
 
 

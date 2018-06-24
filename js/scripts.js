@@ -84,9 +84,10 @@ jQuery(function ($) {
           xhr.setRequestHeader('X-WP-Nonce', api_vars.nonce);
         },
       }).done(function () {
-        $('#form-container').hide();
-        $('#success-message').show();
+       // $('#form-container').hide();
+       // $('#success-message').show();
         // $('#success-message').text('jquery text');
+        alert('your quote has been submitted');
       })
       .fail(function () {
         alert('your quote could not be submitted'); // if something goes wrong

@@ -1,5 +1,7 @@
 <?php
 /**
+ * 
+ *  Template name: archive
  * The template for displaying archive pages.
  *
  * @package QOD_Starter_Theme
@@ -9,7 +11,7 @@ get_header(); ?>
    <div class = "archives-container">
 
       <?php while ( have_posts() ) : the_post(); ?>
-      <?php endwhile?>
+      <?php endwhile?> 
 
 <span class = "quote-wrapper-left"><i class="fas fa-quote-left"></i></span>
       

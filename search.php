@@ -13,14 +13,10 @@ get_header(); ?>
 		<main id="main" class="site-main" role="main">
 
 
-			<?php
-			$args = array( 'orderby' => 'rand','posts_per_page' => 10 );
-			$quote = new WP_Query( $args ); // instantiate our object
-			?>
-
+	<?php if ( have_posts() ) : ?>
   
 
-		<?php if ( $quote->have_posts() ) : ?>
+		
 
 			<header class="page-header">
 
@@ -33,7 +29,14 @@ get_header(); ?>
 			</header><!-- .page-header -->
 
 			<?php /* Start the Loop */ ?>
-			<?php while ( $quote->have_posts() ) : $quote->the_post(); ?>
+			<?php while ( have_posts() ) : the_post(); ?>
+
+		
+
+			<?php
+			$args = array( 'orderby' => 'rand','posts_per_page' => 10 );
+			$quote = new WP_Query( $args ); // instantiate our object
+			?> 
 
 				<?php get_template_part( 'template-parts/content', 'search' ); ?>
 

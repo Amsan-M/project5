@@ -3,6 +3,7 @@
 
     .site-main {
         margin: 2%;
+      
     }
 
     .page-header {
@@ -11,6 +12,42 @@
 
     .content-area {
         margin-top: 10%;
+    }
+
+    form{
+        margin-bottom:30%;
+    }
+
+    
+    fieldset{
+        border:none;
+        padding:0px;
+    }
+
+    input[type=search]{
+        background-color: transparent;
+        font-family: 'Exo';
+        font-weight: 300;
+        width:15rem;
+        border: 2px solid $green;
+     
+    }
+
+    button{
+        background-color:transparent;
+        box-shadow:none;
+        border:none;
+
+        i{
+            color:$green;
+            text-shadow: none;
+            font-size:0.8rem;
+        }
+
+        form{
+            margin-bottom:20%;
+        }
+
     }
 
 
@@ -30,6 +67,10 @@
                 margin: 0%;
             }
         }
+
+        input[type=search]{
+            height: 2rem;
+        }
     } //media tablet
 
 
@@ -41,6 +82,8 @@
             flex-direction: column;
             flex-wrap: wrap;
             width: 80%;
+            margin-top: 0;
+            padding-top: 0;
         }
 
         .site-content {
@@ -57,6 +100,11 @@
             display: flex;
             justify-content: center;
             width: 80%;
+        }
+
+        .page-header{
+            height: 0rem;
+            margin-top: 0rem;
         }
     }// media desktop
 }// search resuls/ searchnoresults
