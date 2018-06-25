@@ -2,7 +2,7 @@
 
 A WordPress quote machine, inspired by Chris Coyier's Quotes on Design, and created by RED Academy for their students.
 
-#### Tools
+### Tools
 
 Wordpress
 Javascript
